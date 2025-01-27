@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registration form</title>
+    <style>
+        body{
+         font-family: 'Courier New', Courier, monospace; 
+         margin: 0;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+        }
+        .main
+        {
+           background-color: #fff; 
+           border-radius: 15px;
+           box-shadow: 2px 2px 10px 10px;
+           padding: 20px;
+           width: 300px;
+        }
+        .main h2
+        {
+        text-align: center;
+        margin-bottom: 20px;
+        color: blue;
+        }
+        label
+        {
+            display: block;
+        }
+        button
+        {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color:silver;
+            color: solid black;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+        
+
+         
+    </style>
+	
+</head>
+<body>
+	<div class="main">
+        <h2> Registration Form </h2>
+        <form action="" onsubmit="f1()">
+            <label for="first"> First Name :</label>
+            <input type="text" id="first" name="first" required/> 
+
+            <label for="last"> Last Name :</label> 
+            <input type="text" name="last" id="last" required/> 
+
+            <label for="email"> Email:</label> 
+            <input type="email" name="email" id="email" required/>  
+            
+            <label for="Password"> Password :</label>
+            <input type="password" name=" password" id="password" required/>
+
+            <label for="repassword"> Re-type Password :</label>
+            <input for="password" name="repassword" id="repassword" required/> 
+
+            <label for="contact"> Contact: </label>
+            <input type="number" name="contact" id="contact" maxlength="10" required>
+               
+            <label for="gender"> Gender :</label>
+            <select id=" gender" name="gender" required>
+
+                <option value="male">Male</option>
+            <option value="Female"> Female</option>
+            <option value="other"> other</option>
+            </select><br><br>
+            <button type="submit" value="submit"> Submit</button>
+            <button type="reset"> Reset</button>
+
+            </form>
+            
+        </form>
+    </div>
+    <script type="text/javascript">
+        function f1()
+        {
+            alert("Registration Form submitted successfully ");
+        }
+    </script>        
+</body>
+</html>
